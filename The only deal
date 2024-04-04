@@ -1,0 +1,19 @@
+import time
+import pyautogui
+import winsound
+time.sleep(5)
+for x in range(10):
+    for x in range(15):
+        time.sleep(5)
+        pyautogui.click(474, 439)
+        pyautogui.moveRel(0, 240, duration = 1)
+        pyautogui.click()
+        time.sleep(5)
+        pyautogui.moveRel(300, 300, duration = 1)
+        pyautogui.click()
+    time.sleep(60)
+    frequency = 2500  # Set Frequency To 2500 Hertz
+    duration = 100  # Set Duration To 1000 ms == 1 second
+    winsound.Beep(frequency, duration)
+
+
